@@ -24,7 +24,7 @@ const Index = () => {
         <div 
           className="bg-cover bg-center h-[70vh]" 
           style={{ 
-            backgroundImage: `url('/lovable-uploads/afcd3f77-d71f-4070-b496-e46916ea501f.png')` 
+            backgroundImage: `url('/lovable-uploads/4376105c-9b90-46aa-8f1f-f2d6c5000d68.png')` 
           }}
         >
           <div className="absolute inset-0 hero-gradient opacity-80"></div>

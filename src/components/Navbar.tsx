@@ -9,32 +9,32 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-red-DEFAULT shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-red-dark text-2xl font-bold font-playfair">HEBRON</span>
-            <span className="text-gold-dark text-2xl font-bold font-playfair">FOOD</span>
+            <span className="text-white text-2xl font-bold font-playfair">HEBRON</span>
+            <span className="text-gold-DEFAULT text-2xl font-bold font-playfair">FOOD</span>
           </Link>
           
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-red-DEFAULT font-medium transition-colors">
+            <Link to="/" className="text-white hover:text-gold-light font-medium transition-colors">
               Home
             </Link>
-            <Link to="/restaurants" className="text-gray-700 hover:text-red-DEFAULT font-medium transition-colors">
+            <Link to="/restaurants" className="text-white hover:text-gold-light font-medium transition-colors">
               Restaurants
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-red-DEFAULT font-medium transition-colors">
+            <Link to="/about" className="text-white hover:text-gold-light font-medium transition-colors">
               About
             </Link>
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="text-gray-700">
+            <Button variant="ghost" size="icon" className="text-white hover:bg-red-dark">
               <Search size={20} />
             </Button>
-            <Button variant="ghost" size="icon" className="text-gray-700">
+            <Button variant="ghost" size="icon" className="text-white hover:bg-red-dark">
               <User size={20} />
             </Button>
           </div>
@@ -46,6 +46,7 @@ const Navbar = () => {
               size="icon" 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
+              className="text-white"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
@@ -56,37 +57,37 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div 
         className={cn(
-          "md:hidden bg-white fixed inset-x-0 transition-all duration-300 ease-in-out z-40",
+          "md:hidden bg-red-DEFAULT fixed inset-x-0 transition-all duration-300 ease-in-out z-40",
           isMenuOpen ? "top-16 opacity-100" : "-top-full opacity-0"
         )}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4 shadow-lg">
           <Link 
             to="/" 
-            className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md"
+            className="px-4 py-2 text-white hover:bg-red-dark rounded-md"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </Link>
           <Link 
             to="/restaurants" 
-            className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md"
+            className="px-4 py-2 text-white hover:bg-red-dark rounded-md"
             onClick={() => setIsMenuOpen(false)}
           >
             Restaurants
           </Link>
           <Link 
             to="/about" 
-            className="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md"
+            className="px-4 py-2 text-white hover:bg-red-dark rounded-md"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </Link>
           <div className="flex items-center space-x-2 px-4 py-2">
-            <Button variant="outline" size="sm" className="flex-1">
+            <Button variant="outline" size="sm" className="flex-1 bg-transparent text-white border-white hover:bg-red-dark">
               <Search size={16} className="mr-1" /> Search
             </Button>
-            <Button variant="outline" size="sm" className="flex-1">
+            <Button variant="outline" size="sm" className="flex-1 bg-transparent text-white border-white hover:bg-red-dark">
               <User size={16} className="mr-1" /> Profile
             </Button>
           </div>

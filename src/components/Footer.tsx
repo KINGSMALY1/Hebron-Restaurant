@@ -11,18 +11,20 @@ const Footer = () => {
           <div className="md:col-span-1">
             <Link to="/" className="inline-block">
               <div className="flex items-center space-x-2">
-                <span className="text-red-light text-2xl font-bold font-playfair">Golden</span>
-                <span className="text-gold-light text-2xl font-bold font-playfair">Spoon</span>
+                <span className="text-red-light text-2xl font-bold font-playfair">HEBRON</span>
+                <span className="text-gold-light text-2xl font-bold font-playfair">FOOD</span>
               </div>
             </Link>
             <p className="mt-4 text-gray-400 text-sm">
-              Discover the finest dining experiences with expert reviews and recommendations.
+              Discover exceptional dining experiences in Maiduguri, Borno State.
             </p>
             <div className="flex space-x-4 mt-6">
               <a 
-                href="#" 
+                href="https://www.instagram.com/hebronfoodmaiduguri" 
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram size={20} />
               </a>
@@ -81,7 +83,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2 text-gray-400">
                 <Mail size={16} />
-                <span>contact@goldenspoon.com</span>
+                <span>info@hebronfood.com</span>
               </li>
             </ul>
             <div className="mt-6">
@@ -101,7 +103,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} Golden Spoon Reviews. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} HEBRON FOOD. All rights reserved.</p>
         </div>
       </div>
     </footer>
