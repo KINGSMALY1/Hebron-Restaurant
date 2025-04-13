@@ -177,16 +177,15 @@ const Index = () => {
             Located at: Maiduguri, Borno State, Nigeria - Along west end beside First Bank main branch
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button 
-              className="bg-red-DEFAULT hover:bg-red-dark text-white rounded-full px-8"
-              size="lg"
-              as="a" 
+            {/* Fix for the 'as' prop issue - replace Button with an anchor element styled like a Button */}
+            <a 
               href="https://maps.app.goo.gl/2pm2CJfzK56r6KeJ7"
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-red-DEFAULT text-white px-8 py-2 h-11 text-sm font-medium transition-colors hover:bg-red-dark"
             >
               Get Directions
-            </Button>
+            </a>
             <Button 
               variant="outline" 
               className="border-gold text-gold hover:bg-gold/10 rounded-full px-8"
