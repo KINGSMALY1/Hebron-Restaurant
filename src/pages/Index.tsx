@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Search, Star, MapPin, Utensils } from 'lucide-react';
@@ -8,6 +7,7 @@ import RestaurantCard from '@/components/RestaurantCard';
 import ReviewCard from '@/components/ReviewCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ReviewsSummary from '@/components/ReviewsSummary';
 import { getFeaturedRestaurants, getRecentReviews } from '@/data/restaurants';
 
 const Index = () => {
@@ -135,6 +135,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Customer Reviews Summary Section */}
+      <ReviewsSummary />
       
       {/* Recent Reviews Section */}
       <section className="py-16 px-4 bg-white">
