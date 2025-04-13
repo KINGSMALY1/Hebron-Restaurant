@@ -47,7 +47,7 @@ const ReviewsSummary: React.FC = () => {
         <div className="flex flex-col items-center text-center mb-12">
           <h2 className="text-3xl font-bold mb-3 font-playfair">Our Happy Customers</h2>
           <p className="text-gray-600 max-w-2xl">
-            We pride ourselves on excellent food and service. Here's what some of our valued customers have to say about their experience at Hebron Foods.
+            We pride ourselves on excellent food and service. Here's what some of our valued customers have to say about their experience at HEBRON FOOD.
           </p>
         </div>
 

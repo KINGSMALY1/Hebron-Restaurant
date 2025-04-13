@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Search, Star, MapPin, Utensils } from 'lucide-react';
@@ -29,14 +30,14 @@ const Index = () => {
           <div className="absolute inset-0 hero-gradient opacity-80"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center font-playfair">
-              Golden Spoon Reviews
+              HEBRON FOOD
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl text-center">
-              Discover exceptional dining experiences curated by our expert reviewers
+              Discover exceptional dining experiences in Maiduguri, Borno State
             </p>
             <div className="relative w-full max-w-lg">
               <Input 
-                placeholder="Search for restaurants, cuisines, or locations..." 
+                placeholder="Search for dishes, cuisines, or services..." 
                 className="pl-10 py-6 bg-white/90 text-gray-900 rounded-full w-full border-none"
               />
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" size={20} />
@@ -55,7 +56,7 @@ const Index = () => {
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
           <div className="flex items-center justify-between mb-10">
-            <h2 className="text-3xl font-bold font-playfair">Featured Restaurants</h2>
+            <h2 className="text-3xl font-bold font-playfair">Featured Meals</h2>
             <Link to="/restaurants" className="text-red-DEFAULT hover:text-red-dark flex items-center gap-1">
               View all <ArrowRight size={16} />
             </Link>
@@ -167,24 +168,31 @@ const Index = () => {
       <section className="py-20 px-4 bg-gray-900 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playfair">
-            Discover Your Next Favorite Restaurant
+            Visit HEBRON FOOD Today
           </h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-300">
-            Join our community of food enthusiasts and explore the best dining experiences in your area.
+          <p className="text-lg mb-4 max-w-2xl mx-auto text-gray-300">
+            Join our community of food enthusiasts and explore the best dining experience in Maiduguri.
+          </p>
+          <p className="text-md mb-8 max-w-2xl mx-auto text-gray-300">
+            Located at: Maiduguri, Borno State, Nigeria - Along west end beside First Bank main branch
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button 
               className="bg-red-DEFAULT hover:bg-red-dark text-white rounded-full px-8"
               size="lg"
+              as="a" 
+              href="https://maps.app.goo.gl/2pm2CJfzK56r6KeJ7"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Browse All Restaurants
+              Get Directions
             </Button>
             <Button 
               variant="outline" 
               className="border-gold text-gold hover:bg-gold/10 rounded-full px-8"
               size="lg"
             >
-              Become a Reviewer
+              View Menu
             </Button>
           </div>
         </div>
