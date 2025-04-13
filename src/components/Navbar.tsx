@@ -13,8 +13,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-red-dark text-2xl font-bold font-playfair">Golden</span>
-            <span className="text-gold-dark text-2xl font-bold font-playfair">Spoon</span>
+            <span className="text-red-dark text-2xl font-bold font-playfair">HEBRON</span>
+            <span className="text-gold-dark text-2xl font-bold font-playfair">FOOD</span>
           </Link>
           
           {/* Desktop Nav */}

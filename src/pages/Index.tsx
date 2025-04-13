@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Search, Star, MapPin, Utensils } from 'lucide-react';
+import { ArrowRight, Search, Star, MapPin, Utensils, Clock, Phone, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import RestaurantCard from '@/components/RestaurantCard';
@@ -24,7 +24,7 @@ const Index = () => {
         <div 
           className="bg-cover bg-center h-[70vh]" 
           style={{ 
-            backgroundImage: `url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')` 
+            backgroundImage: `url('/lovable-uploads/afcd3f77-d71f-4070-b496-e46916ea501f.png')` 
           }}
         >
           <div className="absolute inset-0 hero-gradient opacity-80"></div>
@@ -62,10 +62,87 @@ const Index = () => {
             </Link>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredRestaurants.map((restaurant) => (
-              <RestaurantCard key={restaurant.id} restaurant={restaurant} />
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Featured Meal 1 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="relative h-64">
+                <img 
+                  src="/lovable-uploads/0e958da9-401d-4c2c-9ee6-cc1c2dd198c5.png" 
+                  alt="Suya - Grilled meat skewers" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 right-2 bg-white/90 rounded-full px-2 py-1 text-xs font-semibold text-red-DEFAULT">
+                  Featured
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Suya Platter</h3>
+                <p className="text-gray-600 mb-3 text-sm line-clamp-2">
+                  Delicious grilled meat skewers seasoned with traditional spices
+                </p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <Star size={16} className="text-gold fill-gold" />
+                    <span className="ml-1 text-sm font-medium">4.8</span>
+                  </div>
+                  <span className="text-sm text-gray-500">₦2,500</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Featured Meal 2 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="relative h-64">
+                <img 
+                  src="/lovable-uploads/0e6cfbf5-1598-4246-8593-83a63917a404.png" 
+                  alt="Jollof Rice with sides" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 right-2 bg-white/90 rounded-full px-2 py-1 text-xs font-semibold text-red-DEFAULT">
+                  Popular
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Jollof Rice Special</h3>
+                <p className="text-gray-600 mb-3 text-sm line-clamp-2">
+                  Our signature jollof rice served with yam and fried toast
+                </p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <Star size={16} className="text-gold fill-gold" />
+                    <span className="ml-1 text-sm font-medium">4.7</span>
+                  </div>
+                  <span className="text-sm text-gray-500">₦1,800</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Featured Meal 3 */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="relative h-64">
+                <img 
+                  src="/lovable-uploads/8fd7346a-9cac-4bfb-beb9-8ed3977a9906.png" 
+                  alt="Hot coffee" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 right-2 bg-white/90 rounded-full px-2 py-1 text-xs font-semibold text-red-DEFAULT">
+                  New
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Premium Coffee</h3>
+                <p className="text-gray-600 mb-3 text-sm line-clamp-2">
+                  Freshly brewed premium coffee to start your day right
+                </p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <Star size={16} className="text-gold fill-gold" />
+                    <span className="ml-1 text-sm font-medium">4.5</span>
+                  </div>
+                  <span className="text-sm text-gray-500">₦800</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -160,6 +237,70 @@ const Index = () => {
                 <ReviewCard review={review} />
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      
+      {/* Contact Info & Map Section */}
+      <section className="py-10 px-4 bg-gray-100">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-6 font-playfair text-center">Find Us</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <MapPin size={20} className="text-red-DEFAULT flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold">Address</h3>
+                  <p className="text-gray-700">4 Krika Sama Road, Maiduguri 600282, Borno</p>
+                  <p className="text-gray-700">R4RW+Q5 Maiduguri</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <Clock size={20} className="text-red-DEFAULT flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold">Hours</h3>
+                  <p className="text-gray-700">7am - 11pm, Open Daily</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <Phone size={20} className="text-red-DEFAULT flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold">Phone</h3>
+                  <p className="text-gray-700">0912 666 6934</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <Instagram size={20} className="text-red-DEFAULT flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold">Social Media</h3>
+                  <a 
+                    href="https://www.instagram.com/hebronfoodmaiduguri" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-red-DEFAULT hover:text-red-dark"
+                  >
+                    @hebronfoodmaiduguri
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="h-96 rounded-lg overflow-hidden shadow-md">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.7350008272245!2d13.1358948!3d11.850280099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11049f3ee6b046bf%3A0x2bba0628b6d92e32!2sHebron%20Food!5e0!3m2!1sen!2sng!4v1681867362737!5m2!1sen!2sng" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="HEBRON FOOD Location"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
