@@ -23,10 +23,10 @@ const Index = () => {
         <div 
           className="bg-cover bg-center h-[70vh]" 
           style={{ 
-            backgroundImage: `url('/lovable-uploads/4376105c-9b90-46aa-8f1f-f2d6c5000d68.png')` 
+            backgroundImage: `url('/your-image-path-here.jpg')` // We'll update this with your image
           }}
         >
-          <div className="absolute inset-0 hero-gradient opacity-80"></div>
+          <div className="absolute inset-0 bg-black/40"></div> {/* Dark overlay for text readability */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center font-playfair">
               <span className="text-red-DEFAULT">HEBRON</span> FOOD
