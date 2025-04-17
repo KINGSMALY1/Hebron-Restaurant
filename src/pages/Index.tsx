@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Search, Star, MapPin, Utensils, Clock, Phone, Instagram } from 'lucide-react';
@@ -30,7 +29,7 @@ const Index = () => {
           <div className="absolute inset-0 hero-gradient opacity-80"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center font-playfair">
-              HEBRON FOOD
+              <span className="text-red-DEFAULT">HEBRON</span> FOOD
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl text-center">
               Discover exceptional dining experiences in Maiduguri, Borno State
@@ -90,12 +89,12 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Featured Meal 2 */}
+            {/* Featured Meal 2 - Replace Jollof Rice with Yam and Egg */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-64">
                 <img 
                   src="/lovable-uploads/0e6cfbf5-1598-4246-8593-83a63917a404.png" 
-                  alt="Jollof Rice with sides" 
+                  alt="Yam and Egg" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-2 right-2 bg-white/90 rounded-full px-2 py-1 text-xs font-semibold text-red-DEFAULT">
@@ -103,9 +102,9 @@ const Index = () => {
                 </div>
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Jollof Rice Special</h3>
+                <h3 className="text-xl font-semibold mb-2">Yam and Egg Special</h3>
                 <p className="text-gray-600 mb-3 text-sm line-clamp-2">
-                  Our signature jollof rice served with yam and fried toast
+                  Delicious yam served with perfectly prepared eggs
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
@@ -309,7 +308,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-gray-900 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playfair">
-            Visit HEBRON FOOD Today
+            Visit <span className="text-red-DEFAULT">HEBRON</span> FOOD Today
           </h2>
           <p className="text-lg mb-4 max-w-2xl mx-auto text-gray-300">
             Join our community of food enthusiasts and explore the best dining experience in Maiduguri.
