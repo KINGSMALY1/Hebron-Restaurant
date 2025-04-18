@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div 
         className="bg-cover bg-center h-[70vh]" 
         style={{ 
-          backgroundImage: `url('/lovable-uploads/15343103-783c-4ee5-ac69-df5a5addc56c.png')`,
+          backgroundImage: `url('/lovable-uploads/871f3758-4c67-4ad8-a4fd-37d5b31ea8c0.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
