@@ -1,14 +1,12 @@
 
 import React from 'react';
+import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 const HeroSection = () => {
@@ -21,12 +19,12 @@ const HeroSection = () => {
             <div 
               className="bg-cover bg-center h-[70vh]" 
               style={{ 
-                backgroundImage: `url('/lovable-uploads/41b5c7ff-d8a5-46b6-8e4c-b88bbf04e0a9.png')`,
+                backgroundImage: `url('/lovable-uploads/cec39f65-cdab-472f-b7a0-2f4d274d0209.png')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-red-900/60 to-black/40"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-red-900/70 to-black/50"></div>
             </div>
           </CarouselItem>
           {/* Inside View Image */}
@@ -34,17 +32,15 @@ const HeroSection = () => {
             <div 
               className="bg-cover bg-center h-[70vh]" 
               style={{ 
-                backgroundImage: `url('/lovable-uploads/bf7fe364-bd16-461b-a1bf-1a958d7083ef.png')`,
+                backgroundImage: `url('/lovable-uploads/5e8b48b5-7288-4bbe-8af8-f693aa1ad0f6.png')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-red-900/60 to-black/40"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-red-900/70 to-black/50"></div>
             </div>
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious className="left-4" />
-        <CarouselNext className="right-4" />
       </Carousel>
       
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4 pointer-events-none">
